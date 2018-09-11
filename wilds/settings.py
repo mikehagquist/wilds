@@ -75,10 +75,14 @@ WSGI_APPLICATION = 'wilds.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
+DDATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'app_data',
+        'USER': 'app_user',
+        'PASSWORD': 'app_user',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
