@@ -9,4 +9,3 @@ join animals_family f on a.family_id = f.id
 join animals_genus g on a.genus_id = g.id
 join animals_species s on a.genus_id = s.id
 order by animal_name
-
