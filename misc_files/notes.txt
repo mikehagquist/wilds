@@ -1,0 +1,12 @@
+select animal_name, p.phylum_name, c.class_name,
+  o.order_name, f.family_name, g.genus_name,
+  s.species_name
+from animals_animal a
+join animals_phylum p on a.phylum_id = p.id
+join animals_classa c on a.classa_id = c.id
+join animals_order o on a.order_id = o.id
+join animals_family f on a.family_id = f.id
+join animals_genus g on a.genus_id = g.id
+join animals_species s on a.genus_id = s.id
+order by animal_name
+
